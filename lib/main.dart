@@ -52,7 +52,7 @@ class _MyHomePageState extends State<MyHomePage> {
               'Alert message',
             ),
             content: Text(
-              'Welcome to ExecuteAutomation ' + _counter.toString(),
+              'Welcome to ExecuteAutomation $_counter',
               key: const ValueKey('alert_text'),
             ),
             actions: <Widget>[
