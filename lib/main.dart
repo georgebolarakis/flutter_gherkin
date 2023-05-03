@@ -85,6 +85,7 @@ class _MyHomePageState extends State<MyHomePage> {
           Text(
             '$_counter',
             style: Theme.of(context).textTheme.headlineMedium,
+            key: const ValueKey('counter'),
           ),
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
@@ -96,11 +97,6 @@ class _MyHomePageState extends State<MyHomePage> {
                 key: const Key('alert'),
                 child: const Text('Alert'),
               ),
-              // ElevatedButton(
-              //   onPressed: _decrementCounter,
-              //   child: Text('subtract'),
-              //   key: Key('subtract'),
-              // )
             ],
           ),
           Row(
